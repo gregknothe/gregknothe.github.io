@@ -1,0 +1,298 @@
+<html>
+    <link rel="stylesheet" href="style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <h1>
+        Greg Knothe Project Portfolio
+    </h1>
+
+
+    <div class="description">
+        Some personal projects I have worked on in my free time for self use or others.
+    </div>
+
+    <div class="projectContainer">
+
+        <div class="leftContainer">
+            <div class="sideshowContainer">
+                <div class="slide fade">
+                    <img src="img/ygorec1.png" style="width: 100%;">
+                </div>
+                <div class="slide fade">
+                    <img src="img/ygored2.png" style="width: 100%;">
+                </div>
+                <div style="text-align:center; margin-top: -10px;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="projectTitle">
+                YGORec
+            </div>
+            <div class="projectDescription">
+                A user-friendly tool that analyzes all public high-ranking tournament decks for the Yu-Gi-Oh card game, distilling nearly a million cards down into auto-generated visuals and simple statistics that anyone can understand to better prepare them for future event.
+            </div>
+            <div class="projectMethods">
+                key methods: data collection (web scraping and API), data cleaning, statistical analysis
+            </div>
+            <div class="linkContainer">
+                <a class="visitLink" href="https://projectshuckle.github.io/YGORec/">
+                    Visit >
+                </a>
+                <a class="githubLink" href="https://github.com/gregknothe/YGO-Decklist-Analytics-v2">
+                    Github > 
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+        
+    <div class="projectContainer">
+
+        <div class="leftContainer">
+            <div class="sideshowContainer">
+                <div class="slide2 fade">
+                    <img src="img/ygorec1.png" style="width: 100%;">
+                </div>
+                <div class="slide2 fade">
+                    <img src="img/ygored2.png" style="width: 100%;">
+                </div>
+                <div style="text-align:center; margin-top: -10px;">
+                    <span class="dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot2" onclick="currentSlide2(2)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="projectTitle">
+                Simultaneous Equations Cannon Visualization
+            </div>
+            <div class="projectDescription">
+                A quick and easy to use graphical visualization of user-inputted values for the card "Simultaneous Equation Cannons” in the Yu-Gi-Oh! card game. 
+            </div>
+            <div class="projectMethods">
+                key methods: data visualization, algebra 
+            </div>
+            <div class="linkContainer">
+                <a class="visitLink" href="https://projectshuckle.github.io/SimEquationCannons/">
+                    Visit >
+                </a>
+                <a class="githubLink" href="https://github.com/gregknothe/SimEquationCannon">
+                    Github > 
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+        
+    <div class="projectContainer">
+
+        <div class="leftContainer">
+            <div class="sideshowContainer">
+                <div class="slide3 fade">
+                    <img src="img/ygorec1.png" style="width: 100%;">
+                </div>
+                <div class="slide3 fade">
+                    <img src="img/ygored2.png" style="width: 100%;">
+                </div>
+                <div style="text-align:center; margin-top: -10px;">
+                    <span class="dot3" onclick="currentSlide3(1)"></span>
+                    <span class="dot3" onclick="currentSlide3(2)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="projectTitle">
+                Twitch Chatbot with OBS Integration
+            </div>
+            <div class="projectDescription">
+                A simple Twitch chatbot with all the bells and whistles one would expect. In addition to the basics, it also has Open Broadcasting Software (OBS) integration to allow for chat commands to display visually on the stream itself. Also working on a collectable system that will be tied to the stream, accessible via website.
+            </div>
+            <div class="projectMethods">
+                key methods: data collection (web scraping), real-time API, photoshop
+            </div>
+            <div class="linkContainer">
+                <a class="githubLink" href="https://github.com/gregknothe/OBS-Stuff-v2">
+                    Github > 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="projectContainer">
+
+        <div class="leftContainer">
+            <div class="sideshowContainer">
+                <div class="slide4 fade">
+                    <img src="img/ygorec1.png" style="width: 100%;">
+                </div>
+                <div class="slide4 fade">
+                    <img src="img/ygored2.png" style="width: 100%;">
+                </div>
+                <div style="text-align:center; margin-top: -10px;">
+                    <span class="dot4" onclick="currentSlide4(1)"></span>
+                    <span class="dot4" onclick="currentSlide4(2)"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="projectTitle">
+                Hand Probability Calculator
+            </div>
+            <div class="projectDescription">
+                An easy to use tool to calculate the odds of drawing specific combinations of objects from user-set groups. 
+            </div>
+            <div class="projectMethods">
+                Methods: statistics
+            </div>
+            <div class="linkContainer">
+                <div class="visitLink">
+                    Visit > 
+                </div>
+                <div class="githubLink">
+                    Github >
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</html>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+
+    let slideIndex2 = 1;
+    showSlides2(slideIndex2);
+
+    // Thumbnail image controls
+    function currentSlide2(n) {
+        showSlides2(slideIndex2 = n);
+    }
+
+    function showSlides2(n) {
+        let i2;
+        let slides2 = document.getElementsByClassName("slide2");
+        let dots2 = document.getElementsByClassName("dot2");
+        if (n > slides2.length) {slideIndex2 = 1}
+        if (n < 1) {slideIndex2 = slides2.length}
+        for (i = 0; i < slides2.length; i++) {
+            slides2[i].style.display = "none";
+        }
+        for (i = 0; i < dots2.length; i++) {
+            dots2[i].className = dots2[i].className.replace(" active", "");
+        }
+        slides2[slideIndex2-1].style.display = "block";
+        dots2[slideIndex2-1].className += " active";
+    }
+
+    let slideIndex3 = 1;
+    showSlides3(slideIndex3);
+
+    // Thumbnail image controls
+    function currentSlide3(n) {
+        showSlides3(slideIndex3 = n);
+    }
+
+    function showSlides3(n) {
+        let i3;
+        let slides3 = document.getElementsByClassName("slide3");
+        let dots3 = document.getElementsByClassName("dot3");
+        if (n > slides3.length) {slideIndex3 = 1}
+        if (n < 1) {slideIndex3 = slides3.length}
+        for (i = 0; i < slides3.length; i++) {
+            slides3[i].style.display = "none";
+        }
+        for (i = 0; i < dots3.length; i++) {
+            dots3[i].className = dots3[i].className.replace(" active", "");
+        }
+        slides3[slideIndex3-1].style.display = "block";
+        dots3[slideIndex3-1].className += " active";
+    }
+
+    let slideIndex4 = 1;
+    showSlides4(slideIndex4);
+
+    // Thumbnail image controls
+    function currentSlide4(n) {
+        showSlides4(slideIndex4 = n);
+    }
+
+    function showSlides4(n) {
+        let i4;
+        let slides4 = document.getElementsByClassName("slide4");
+        let dots4 = document.getElementsByClassName("dot4");
+        if (n > slides4.length) {slideIndex4 = 1}
+        if (n < 1) {slideIndex4 = slides4.length}
+        for (i = 0; i < slides4.length; i++) {
+            slides4[i].style.display = "none";
+        }
+        for (i = 0; i < dots4.length; i++) {
+            dots4[i].className = dots4[i].className.replace(" active", "");
+        }
+        slides4[slideIndex4-1].style.display = "block";
+        dots4[slideIndex4-1].className += " active";
+    }
+
+    let slideIndex5 = 1;
+    showSlides5(slideIndex5);
+
+    // Thumbnail image controls
+    function currentSlide5(n) {
+        showSlides5(slideIndex5 = n);
+    }
+
+    function showSlides5(n) {
+        let i5;
+        let slides5 = document.getElementsByClassName("slide5");
+        let dots5 = document.getElementsByClassName("dot5");
+        if (n > slides5.length) {slideIndex5 = 1}
+        if (n < 1) {slideIndex5 = slides5.length}
+        for (i = 0; i < slides5.length; i++) {
+            slides5[i].style.display = "none";
+        }
+        for (i = 0; i < dots5.length; i++) {
+            dots5[i].className = dots5[i].className.replace(" active", "");
+        }
+        slides5[slideIndex5-1].style.display = "block";
+        dots5[slideIndex5-1].className += " active";
+    }
+
+
+
+</script>

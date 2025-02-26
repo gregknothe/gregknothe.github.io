@@ -1,0 +1,161 @@
+html {
+    background-color: rgb(48, 48, 48);
+}
+
+h1 {
+    color: white; 
+    font-family: "Corbel Light";
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.bar {
+    border: 1px solid white;
+    width: 45%;
+    margin-left: 27.5%;
+    margin-top: -20px;
+    max-width: 300px;
+    align-content: center;
+}
+
+.description {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: -15px; 
+    width: 30%;
+    margin-left: 35%;
+    font-size: 14px;
+    font-family: "Corbel Light";
+    border-top: 1px solid white; 
+    padding-top: 5px;
+}
+
+
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-width: 700px;
+    background-color: rgba(0, 128, 0, 0);
+    margin: auto;
+    margin-bottom: 20px;;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0);
+    width: 30%;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(38, 0, 255, 0);
+    width: 70%;
+    padding-left: 20px; 
+}
+
+.projectPreview {
+    border: 1px solid white;
+    height: 200px;
+    width: 200px; 
+}
+
+.projectTitle {
+    color: white;
+    font-size: 22px;
+    font-family: "Corbel Light";
+    font-weight: lighter;
+    padding-bottom: 5px; 
+}
+
+.projectDescription {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: "Arial";
+}
+
+.projectMethods {
+    color: rgb(163, 163, 163);
+    font-size: 12px;
+    font-family: "Arial";
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    max-height: 50px;
+}
+
+.visitLink, .githubLink {
+    color: rgb(255, 255, 255); 
+    padding-right: 10px; 
+    text-decoration: none;
+    font-family: "Corbel Light";
+    font-size: 14px;
+}
+
+
+* {box-sizing:border-box}
+
+.slideshowContainer {
+    border: 1px white solid; 
+}
+  
+.slide, .slide2, .slide3, .slide4, .slide5 {
+    display: none;
+    max-width: 300px;
+    min-width: 100px;
+    max-height: 250px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slideNumber, .slideNumber2, .slideNumber3, .slideNumber4, .slideNumber5 {
+    color: #f2f2f2;
+    font-size: 15px;
+}
+
+.dot, .dot2, .dot3, .dot4, .dot5 {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    margin-top: 15px;
+    background-color: #525252;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover {
+    background-color: white;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+img {
+    border: 1px white solid; 
+}
