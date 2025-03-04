@@ -33,8 +33,6 @@ h1 {
     padding-top: 5px;
 }
 
-
-
 .projectContainer {
     display: flex;
     flex-direction: row;
@@ -101,7 +99,6 @@ h1 {
     font-family: "Corbel Light";
     font-size: 14px;
 }
-
 
 * {box-sizing:border-box}
 
